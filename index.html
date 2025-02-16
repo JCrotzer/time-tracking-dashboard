@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <script src="./assets/js/script.js" async></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="profile-container">
+        <div class="profile">
+          <img
+            src="./assets/images/image-jeremy.png"
+            class="profile-img"
+            alt="profile-img"
+          />
+          <div class="profile-info">
+            <p class="description">Report for</p>
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <nav class="task-headers">
+          <input type="radio" name="frequency" id="daily" class="time-frame" />
+          <label for="daily">Daily</label>
+
+          <input
+            type="radio"
+            name="frequency"
+            id="weekly"
+            class="time-frame"
+            checked
+          />
+          <label for="weekly">Weekly</label>
+
+          <input
+            type="radio"
+            name="frequency"
+            id="monthly"
+            class="time-frame"
+          />
+          <label for="monthly">Monthly</label>
+        </nav>
+      </header>
+
+      <main>
+        <article class="card work">
+          <div class="card-color card-color1">
+            <figure>
+              <img
+                src="./assets/images/icon-work.svg"
+                class="icon-img"
+                alt="work-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Work</h2>
+              <img
+                src="./assets/images/icon-ellipsis.svg"
+                class="dots"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Work">32hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 36hrs</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card play">
+          <div class="card-color card-color2">
+            <figure>
+              <img
+                src="./assets/images/icon-play.svg"
+                class="icon-img"
+                alt="play-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Play</h2>
+              <img src="./assets/images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Play">10hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 36hrs</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card study">
+          <div class="card-color card-color3">
+            <figure>
+              <img
+                src="./assets/images/icon-study.svg"
+                class="icone-img"
+                alt="study-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Study</h2>
+              <img src="./assets/images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Study">4hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 7hrs</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card exercise">
+          <div class="card-color card-color4">
+            <figure>
+              <img
+                src="./assets/images/icon-exercise.svg"
+                class="icon-img"
+                alt="exercise-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Exercise</h2>
+              <img src="./assets/images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Exercise"
+                >4hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 5hrs</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card social">
+          <div class="card-color card-color5">
+            <figure>
+              <img
+                src="./assets/images/icon-social.svg"
+                class="icone-img"
+                alt="social-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Social</h2>
+              <img src="./assets/images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Social">5hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 10hrs</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card self">
+          <div class="card-color card-color6">
+            <figure>
+              <img
+                src="./assets/images/icon-self-care.svg"
+                class="icon-img"
+                alt="selfcare-img"
+              />
+            </figure>
+          </div>
+          <div class="card-data">
+            <div class="card-data-header">
+              <h2>Self Care</h2>
+              <img src="./assets/images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card-info">
+              <strong class="current-hours" data-category="Self Care"
+                >2hrs</strong
+              ><span class="previous-hours" data-category="Self Care"
+                >Last Week - 2hrs</span
+              >
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Julie Crotzer</a>.
+    </div>
+  </body>
+</html>
