@@ -283,4 +283,14 @@ h2 {
   .current-hours {
     font-size: 56px;
   }
+
+  .profile-name {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .description {
+    font-size: 15px;
+    color: var(--pale-blue);
+  }
 }
