@@ -225,6 +225,8 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 0px;
+    margin: auto;
   }
 
   header.profile-container {
@@ -257,7 +259,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* gap: 50px; */
     max-width: 875px;
   }
 
